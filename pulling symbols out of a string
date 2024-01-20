@@ -1,0 +1,9 @@
+import random
+Symbols = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+length = input("choose password length ")
+password = ''
+
+for i in range(int(length)):
+    randomised = random.choice(Symbols)
+    password += randomised
+print(password)
